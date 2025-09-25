@@ -59,11 +59,23 @@
 
 .navbar {
     background-color: transparent !important;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
 .navbar-scrolled {
-    background-color: #0dcaf0 !important; /* Or any color you prefer */
+    background-color: #fff !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-brand {
+    color: #000 !important;
+}
+
+.navbar-scrolled .cta-btn {
+    color: #000 !important;
+    border-color: #000 !important;
 }
 
 .navbar .nav-link {
